@@ -1,2 +1,0 @@
-bin_dir = File.expand_path("..", __FILE__)
-lib_dir = File.expand_path("../lib", bin_dir)
