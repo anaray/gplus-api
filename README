@@ -1,3 +1,7 @@
 gplus-api
 
-Ruby API to access the GPlus public resources (People, Activity, Events etc) 
+Ruby API to access the GPlus public resources (People, Activity, Events etc)
+
+gplus = Feed::GPlus.new
+gplus.connect( {:key => 'google api_key'} )
+response = gplus.get_person("Marques Brownlee")
