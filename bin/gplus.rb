@@ -5,11 +5,22 @@ $LOAD_PATH.unshift(lib_dir)
 $LOAD_PATH.uniq!
 
 require 'version'
+require 'connection'
 
 #Enable all the REST communication with G+ api
 module Feed
   class GPlus
-    
-  end
+    include Connection
 
+    def get_person(name)
+    	get('people', {:query => name})
+    end
+
+    def get_activity()
+    end
+
+  end
 end
+
+
+
