@@ -10,4 +10,4 @@ Usage:
 ```ruby
 gplus = Feed::GPlus.new
 gplus.connect( {:key => 'google api_key'} )
-response = gplus.get_person("Marques Brownlee")
+response = gplus.get_person("gandalf the grey")
